@@ -3,6 +3,7 @@ function real_time() {
     local color2="%{$fg_no_bold[yellow]%}";
     local time="[$(date +%H:%M)]";
     local color_reset="%{$reset_color%}";
+    echo "${color} $(host_name)${color_reset} ${color}${time}${color_reset}";
 }
 
 function host_name() {
