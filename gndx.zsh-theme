@@ -3,7 +3,6 @@ function real_time() {
     local color2="%{$fg_no_bold[yellow]%}";
     local time="[$(date +%H:%M)]";
     local color_reset="%{$reset_color%}";
-    echo "${color}🧔🏻$(host_name)${color_reset} 🤖 ${color}${time}${color_reset}";
 }
 
 function host_name() {
@@ -28,8 +27,6 @@ function directory() {
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[red]%}[%{$fg_no_bold[yellow]%}";
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} ";
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[red]%}] 🔥";
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_no_bold[red]%}] 💚";
 
 function update_git_status() {
     GIT_STATUS=$(git_prompt_info);
